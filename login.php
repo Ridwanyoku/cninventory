@@ -12,14 +12,16 @@ if (isset($_SESSION['login'])) {
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $role = $_POST['role'];
 
-    $sql = "SELECT * FROM login WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM login WHERE username='$username' AND password='$password' AND role='$role'";
 
     $cek_user = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($cek_user) > 0) {
         $_SESSION['login'] = true;
         $_SESSION['username'] = $username;
+        $_SESSION['role'] = $role;
         header('Location: home.php');
     } else {
         echo "
@@ -61,12 +63,16 @@ if (isset($_POST['login'])) {
                                     <div class="card-body">
                                         <form method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" name="username" id="inputUsername" type="username" placeholder="username" />
-                                                <label for="inputEmail">Username</label>
+                                                <input class="form-control" name="username" id="inputUsername" type="text" placeholder="username" required/>
+                                                <label for="inputUsername">Username</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" name="password" id="inputPassword" type="password" placeholder="Password" />
+                                                <input class="form-control" name="password" id="inputPassword" type="password" placeholder="Password" required/>
                                                 <label for="inputPassword">Password</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" name="role" id="inputRole" type="text" placeholder="Role" required/>
+                                                <label for="inputPassword">Role</label>
                                             </div>
                                             <div class="mt-4 mb-0 text-center rounded-full">
                                                 <button class="btn btn-dark " style="width: 100%; border-radius: 10px" name="login">Login</button>

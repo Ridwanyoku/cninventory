@@ -22,7 +22,9 @@
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
+            <?php echo $_SESSION['role']; ?>
             <?php echo $_SESSION['username']; ?>
+ 
         </div>
     </nav>
 </div>
