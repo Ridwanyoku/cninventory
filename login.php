@@ -58,7 +58,7 @@ if (isset($_POST['login'])) {
                             <div class="col-lg-5">
                                 <div class="card border-0 shadow-sm" style="border-radius: 10px; background-color: cornflowerblue">
                                     <div class="card-header bg-dark" style="border-radius: 10px 10px 0 0">
-                                        <h3 class="text-center font-weight-light text-white my-3">Stock App Login</h3>
+                                        <h3 class="text-center font-weight-light text-white my-3">CNventory Login</h3>
                                     </div>
                                     <div class="card-body">
                                         <form method="POST">
