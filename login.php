@@ -4,10 +4,7 @@ require 'config/db_connect.php';
 
 session_start();
 
-if (isset($_SESSION['login'])) {
-    header('Location: home.php');
-    exit;
-}
+
 
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
@@ -22,7 +19,11 @@ if (isset($_POST['login'])) {
         $_SESSION['login'] = true;
         $_SESSION['username'] = $username;
         $_SESSION['role'] = $role;
-        header('Location: home.php');
+        if ($_SESSION['role']=='admin'){
+            header('location: home.php');
+        }elseif ($_SESSION['role']=='staff') {
+            header('location: staff/home.php');
+        }
     } else {
         echo "
             <script>
@@ -86,7 +87,7 @@ if (isset($_POST['login'])) {
                 </main>
                 <div class="mx-auto mt-5" style="max-width: 600px">
                     <p class="text-center py-2 mx-2 mb-0 bg-light">
-                        Email : admin@gmail.com ; Password : admin
+                        Masukkan username, Password dan Role
                     </p>
                 </div>
             </div>

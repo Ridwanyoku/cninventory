@@ -2,9 +2,8 @@
 
 session_start();
 
-if (!isset($_SESSION['login'])) {
+if ($_SESSION['role']!=='admin') {
     header('Location: login.php');
-    exit;
 }
 
 require 'get_stok_barang.php';
