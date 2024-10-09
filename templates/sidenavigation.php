@@ -14,11 +14,11 @@
                     <div class="sb-nav-link-icon <?php echo strpos($_SERVER['REQUEST_URI'], 'barang_keluar') ? 'text-primary' : ''; ?>"><i class="fa-solid fa-circle-minus"></i></div>
                     Barang Keluar
                 </a>
-                <a class="nav-link" href="tambah_user.php">
-                    <div class="sb-nav-link-icon <?php echo strpos($_SERVER['REQUEST_URI'], 'barang_keluar') ? 'text-primary' : ''; ?>"><i class="fa-solid fa-circle-plus"></i></div>
-                    Tambah User
+                <a class="nav-link mt-4" href="login_user.php">
+                    <div class="sb-nav-link-icon <?php echo strpos($_SERVER['REQUEST_URI'], 'user') ? 'text-primary' : ''; ?>"><i class="fa-solid fa-user"></i></div>
+                    Daftar Pengguna 
                 </a>
-                <a class="nav-link mt-4" href="logout.php">
+                <a class="nav-link" href="logout.php">
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
                     Log Out
                 </a>
