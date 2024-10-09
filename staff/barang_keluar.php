@@ -56,7 +56,7 @@ require 'get_barang_keluar.php';
                                             <th>Tanggal dan Waktu</th>
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
-                                            <th>Penerima</th>
+                                            <th>Customer</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -154,7 +154,7 @@ require 'get_barang_keluar.php';
                                 <?php endforeach ?>
                             </select>
                             <input type="number" name="qty" placeholder="Jumlah barang" min="1" class="form-control mb-3" required />
-                            <input type="text" name="penerima" placeholder="Penerima" class="form-control mb-3" required />
+                            <input type="text" name="penerima" placeholder="Customer" class="form-control mb-3" required />
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary">Tambah</button>

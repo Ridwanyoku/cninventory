@@ -35,7 +35,7 @@ require 'get_stok_barang.php';
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-sm-4">
-                        <h1 class="my-4">Stok Barang Admin</h1>
+                        <h1 class="my-4">Daftar Pengguna</h1>
                         <div class="card mb-4">
                             <div class="card-header d-flex justify-content-between align-items-sm-center flex-column flex-sm-row">
                                 <div class="py-2">

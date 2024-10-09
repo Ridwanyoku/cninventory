@@ -38,7 +38,7 @@ require 'get_barang_keluar.php';
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-sm-4">
-                        <h1 class="my-4">Barang Keluar</h1>
+                        <h1 class="my-4">Barang Keluar Staff</h1>
                         <div class="card mb-4">
                             <div class="card-header d-flex justify-content-between align-items-sm-center flex-column flex-sm-row">
                                 <div class="py-2">
@@ -57,7 +57,7 @@ require 'get_barang_keluar.php';
                                             <th>Tanggal dan Waktu</th>
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
-                                            <th>Penerima</th>
+                                            <th>Customer</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -155,7 +155,7 @@ require 'get_barang_keluar.php';
                                 <?php endforeach ?>
                             </select>
                             <input type="number" name="qty" placeholder="Jumlah barang" min="1" class="form-control mb-3" required />
-                            <input type="text" name="penerima" placeholder="Penerima" class="form-control mb-3" required />
+                            <input type="text" name="penerima" placeholder="customer" class="form-control mb-3" required />
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary">Tambah</button>
