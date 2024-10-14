@@ -144,7 +144,10 @@ require 'get_user.php';
                         <div class="modal-body">
                             <input type="text" name="namapengguna" placeholder="Nama Pengguna" class="form-control mb-3" required />
                             <input type="text" name="password" placeholder="Password" min="1" class="form-control mb-3" required />
-                            <input type="text" name="role" placeholder="Role" class="form-control mb-3" required />
+                            <select name="role" id="inputPassword" class="form-control mb-3" required>
+                                <option value="admin">admin</option>
+                                <option value="staff">staff</option>
+                            </select>
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary">Tambah</button>

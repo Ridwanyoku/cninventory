@@ -27,7 +27,7 @@ if (isset($_POST['login'])) {
     } else {
         echo "
             <script>
-                alert('Email atau password salah!');
+                alert('username, password atau role salah!');
                 window.location.href='login.php';
             </script>
         ";
@@ -72,7 +72,10 @@ if (isset($_POST['login'])) {
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" name="role" id="inputRole" type="text" placeholder="Role" required/>
+                                                <select name="role" id="inputPassword" class="form-control mb-3" required>
+                                                    <option value="admin">admin</option>
+                                                    <option value="staff">staff</option>
+                                                </select>
                                                 <label for="inputPassword">Role</label>
                                             </div>
                                             <div class="mt-4 mb-0 text-center rounded-full">
