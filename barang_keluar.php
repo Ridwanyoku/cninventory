@@ -22,7 +22,7 @@ require 'get_barang_keluar.php';
         <meta name="description" content="Aplikasi Management Stok Barang" />
         <meta name="keywords" content="Management Stock, Stock App, Barang" />
         <meta name="author" content="Alan Nuari" />
-        <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="./images/iconcn.png" type="image/x-icon" />
         <title>Barang Keluar</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>

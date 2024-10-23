@@ -45,7 +45,7 @@ if (isset($_POST['login'])) {
         <meta name="description" content="Aplikasi Management Stok Barang" />
         <meta name="keywords" content="Management Stock, Stock App, Barang" />
         <meta name="author" content="Alan Nuari" />
-        <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="./images/iconcn.png" type="image/x-icon" />
         <title>Login</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
                                     <div class="card-header bg-dark" style="border-radius: 10px 10px 0 0">
                                         <h3 class="text-center font-weight-light text-white my-3">CNventory Login</h3>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" style="background-color: lightgreen;">
                                         <form method="POST">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="username" id="inputUsername" type="text" placeholder="username" required/>
