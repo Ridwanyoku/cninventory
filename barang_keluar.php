@@ -57,7 +57,7 @@ require 'get_barang_keluar.php';
                                             <th>Tanggal dan Waktu</th>
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
-                                            <th>Customer</th>
+                                            <th>Keterangan</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -95,7 +95,7 @@ require 'get_barang_keluar.php';
                                                                 <input type="hidden" name="idkeluar" value="<?php echo $item['idkeluar']; ?>">
                                                                 <label class="mb-1">Jumlah barang :</label>
                                                                 <input type="text" name="qty" value="<?php echo $item['qty']; ?>" min="1" class="form-control mb-3" required />
-                                                                <label class="mb-1">Penerima :</label>
+                                                                <label class="mb-1">Keterangan :</label>
                                                                 <input type="text" name="penerima" value="<?php echo $item['penerima']; ?>" class="form-control mb-3" required />
                                                             </div>
                                                             <div class="modal-footer">
@@ -155,7 +155,7 @@ require 'get_barang_keluar.php';
                                 <?php endforeach ?>
                             </select>
                             <input type="number" name="qty" placeholder="Jumlah barang" min="1" class="form-control mb-3" required />
-                            <input type="text" name="penerima" placeholder="customer" class="form-control mb-3" required />
+                            <input type="text" name="penerima" placeholder="Keterangan" class="form-control mb-3" required />
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary">Tambah</button>
