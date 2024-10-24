@@ -1,4 +1,4 @@
-<?php
+ini<?php
 
 session_start();
 
@@ -81,7 +81,7 @@ mysqli_close($conn);
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
                                             <th>Keterangan</th>
-                                            <th>Penerima</th>
+                                            <th>Info lanjut</th>
                                         </tr>
                                     </thead>
                                     <tbody>
