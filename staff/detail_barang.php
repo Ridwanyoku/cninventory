@@ -80,7 +80,7 @@ mysqli_close($conn);
                                             <th>Nama Barang</th>
                                             <th>Jumlah</th>
                                             <th>Keterangan</th>
-                                            <th>Keterangan</th>
+                                            <th>Info lanjut</th>
                                         </tr>
                                     </thead>
                                     <tbody>
